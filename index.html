@@ -81,6 +81,7 @@
 
         }else if(Notification.permission === "granted"){
           var notification = new Notification(title,options);
+          notification.sound
 
         }else if(Notification.permission !== "denied"){
           Notification.requestPermission(function (permission) {
