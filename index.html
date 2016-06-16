@@ -73,7 +73,6 @@
           tag: 'No repeat',
           icon: 'https://octodex.github.com/images/supportcat.png',
           dir: 'auto',
-          sound: 'https://fc-lucas.github.io/web-notification/media/notify.mp3',
         }
 
         if(!("Notification" in window)){
@@ -81,7 +80,6 @@
 
         }else if(Notification.permission === "granted"){
           var notification = new Notification(title,options);
-          notification.sound
 
         }else if(Notification.permission !== "denied"){
           Notification.requestPermission(function (permission) {
